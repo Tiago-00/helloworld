@@ -15,13 +15,16 @@ import org.springframework.web.bind.annotation.RestController;
 import pt.iade.helloworld.models.CurricularUnit;
 
 
+
     @RestController
     @RequestMapping(path="/api/java/tester/")
 public class JavaTesterController {
     
     private Logger logger = LoggerFactory.getLogger(GreeterController.class);
     private ArrayList<CurricularUnit> units = new ArrayList<CurricularUnit>();
- 
+    
+
+
     @PostMapping(path = "/units", produces= MediaType.APPLICATION_JSON_VALUE)
     public CurricularUnit saveUnit(@RequestBody CurricularUnit unit) {
     logger.info("Added unit "+unit.getName());
