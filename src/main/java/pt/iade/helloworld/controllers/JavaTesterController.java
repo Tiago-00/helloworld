@@ -63,7 +63,7 @@ public class JavaTesterController {
             @PathVariable("numberOfCovids") int numberOfCovids,
             @PathVariable("powerShutdown") boolean powerShutdown,
             @PathVariable("comeBackTime") int comeBackTime) {
-                    return isfire && (numberOfCovids >5 || powerShutdown) && comeBackTime >15;
+                return isfire && (numberOfCovids >5 || powerShutdown) && comeBackTime >15;
 
     }
 
