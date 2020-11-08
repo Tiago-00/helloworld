@@ -151,7 +151,7 @@ public class JavaTesterController {
         public boolean getRequired(@PathVariable("student") boolean isStudent,
             @PathVariable("temperature") double hasCovid,
             @PathVariable("classType") String type) {
-                return isStudent && type.equals("presential") && (hasCovid > 34.5 && hasCovid <37.5 ) ;
+                 return isStudent && type.equals("presential") && (hasCovid > 34.5 && hasCovid <37.5 ) ;
      }
 
 
